@@ -1,0 +1,22 @@
+{
+  "id": "c1",
+  "name": "John Smith",
+  "email": "john@example.com",
+  "country": "USA",
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001"
+  },
+  "phone": "212-555-1234",
+  "memberSince": "2024-01-15",
+  "orders": [
+    {
+      "id": "o1",
+      "date": "2025-04-01",
+      "total": 1299.99,
+      "status": "delivered"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "p2",
+  "name": "Smartphone",
+  "price": 699.99,
+  "categoryId": "electronics",
+  "description": "Latest smartphone model",
+  "specs": {
+    "processor": "Snapdragon 8 Gen 2",
+    "ram": "8GB",
+    "storage": "256GB",
+    "display": "6.7 inch AMOLED"
+  },
+  "inStock": true,
+  "lastUpdated": "2025-04-28T10:00:00Z"
+}

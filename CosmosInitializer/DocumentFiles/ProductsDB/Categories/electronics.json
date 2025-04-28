@@ -1,0 +1,13 @@
+{
+  "id": "electronics",
+  "name": "Electronics",
+  "description": "Electronic devices and gadgets",
+  "featured": true,
+  "imageUrl": "https://example.com/images/categories/electronics.jpg",
+  "subCategories": [
+    "Computers",
+    "Smartphones",
+    "Audio",
+    "Cameras"
+  ]
+}

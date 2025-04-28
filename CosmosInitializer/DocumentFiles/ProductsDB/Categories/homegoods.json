@@ -1,0 +1,13 @@
+{
+  "id": "homegoods",
+  "name": "Home Goods",
+  "description": "Items for your home",
+  "featured": false,
+  "imageUrl": "https://example.com/images/categories/homegoods.jpg",
+  "subCategories": [
+    "Kitchen",
+    "Furniture",
+    "Decor",
+    "Bedding"
+  ]
+}

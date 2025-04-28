@@ -1,0 +1,23 @@
+{
+  "id": "30394",
+  "auctionId": "30394",
+  "title": "Post-War & Contemporary Art Evening Sale",
+  "startDate": "2023-03-06T19:00:00+0000",
+  "endDate": "2023-03-06T23:00:00+0000",
+  "status": "closed",
+  "departmentId": "19",
+  "departmentTitle": "Post-War & Contemporary Art",
+  "locationId": "5",
+  "locationTitle": "London, King Street",
+  "currencyCode": "GBP",
+  "bidCount": 254,
+  "lotCount": 52,
+  "featuredLotId": "6430176",
+  "previewStartDate": "2023-02-28T09:00:00+0000",
+  "previewEndDate": "2023-03-06T16:00:00+0000",
+  "timezone": "Europe/London",
+  "auctionType": "standard",
+  "saleNumber": "20985",
+  "saleCode": "WERT",
+  "requiresRegistration": true
+}

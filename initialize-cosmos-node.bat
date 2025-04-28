@@ -1,0 +1,6 @@
+@echo off
+echo Installing required Node.js dependencies...
+npm install @azure/cosmos --save-dev
+
+echo Running Cosmos DB initialization script...
+node cosmos-init.js
