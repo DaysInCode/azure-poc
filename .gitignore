@@ -52,3 +52,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/alp-data-seeder-poc/.vs/alp-data-seeder-poc/copilot-chat/3675d6a3/sessions
+/alp-data-seeder-poc/.vs/alp-data-seeder-poc
+/.vs/azure-poc/CopilotIndices/17.13.439.2385
+/.vs/azure-poc/v17
+/.vs/azure-poc/FileContentIndex
