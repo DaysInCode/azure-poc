@@ -58,3 +58,7 @@ nunit-*.xml
 /.vs/azure-poc/v17
 /.vs/azure-poc/FileContentIndex
 .vs/azure-poc/FileContentIndex/3262483b-052b-42dc-a092-f920bd29bf3b.vsidx
+.vs/azure-poc/CopilotIndices/17.12.31.40377/SemanticSymbols.db
+.vs/azure-poc/CopilotIndices/17.12.31.40377/SemanticSymbols.db-shm
+.vs/azure-poc/CopilotIndices/17.12.31.40377/SemanticSymbols.db-wal
+.vs/azure-poc/DesignTimeBuild/.dtbcache.v2
