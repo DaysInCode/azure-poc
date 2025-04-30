@@ -15,7 +15,6 @@ namespace CosmosInitializer
             ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
         };
         private static Dictionary<string, string> _containerPartitionKeys = new Dictionary<string, string>();
-
         static async Task Main(string[] args)
         {
             try
