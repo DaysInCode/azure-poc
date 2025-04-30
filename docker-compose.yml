@@ -36,6 +36,15 @@ services:
       - ARTEMIS_USERNAME=admin
       - ARTEMIS_PASSWORD=admin
 
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
 volumes:
   azurite_data:
   cosmos_data:
+  redis_data:

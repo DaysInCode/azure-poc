@@ -135,6 +135,10 @@ try {
 
     $client = New-Object Microsoft.Azure.Cosmos.CosmosClient($endpoint, $masterKey, $clientOptions)
     
+    # Add Redis integration
+    $redis = [StackExchange.Redis.ConnectionMultiplexer]::Connect("localhost:6379")
+    $redisDb = $redis.GetDatabase()
+
     # Process each database configuration
     foreach ($dbConfig in $databaseConfigs) {
         Write-Host "Creating/Ensuring database: $($dbConfig.Name)" -ForegroundColor Green
@@ -157,6 +161,23 @@ try {
                 $docJson = $doc | ConvertTo-Json -Depth 10
                 $container.Container.UpsertItemAsync($docJson).GetAwaiter().GetResult() | Out-Null
             }
+
+            # Seed Redis with data from the Lots container
+            if ($containerConfig.Name -eq "Lots") {
+                $container = $client.GetContainer($dbConfig.Name, $containerConfig.Name)
+                $query = "SELECT * FROM c"
+                $iterator = $container.GetItemQueryIterator($query)
+
+                while ($iterator.HasMoreResults) {
+                    $response = $iterator.ReadNextAsync().GetAwaiter().GetResult()
+                    foreach ($lot in $response.Resource) {
+                        if ($lot.lotId -and $lot.auctionId) {
+                            $redisDb.StringSet("lot:$($lot.lotId)", $lot.auctionId) | Out-Null
+                            Write-Host "Seeded Redis: lot:$($lot.lotId) -> $($lot.auctionId)" -ForegroundColor Green
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -170,4 +191,7 @@ finally {
     if ($client) {
         $client.Dispose()
     }
+
+    # Dispose Redis connection
+    $redis.Dispose()
 }

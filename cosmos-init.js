@@ -4,6 +4,7 @@
  */
 
 const { CosmosClient } = require("@azure/cosmos");
+const redis = require("redis");
 
 // Configuration
 const endpoint = "https://localhost:8081";
@@ -19,11 +20,42 @@ const clientOptions = {
   agent: new (require("https").Agent)({ rejectUnauthorized: false }),
 };
 
+// Redis client configuration
+const redisClient = redis.createClient({ url: "redis://localhost:6379" });
+
 // Database configurations with containers and sample documents
 const databaseConfigs = [];
 
 // Create a new client
 const client = new CosmosClient(clientOptions);
+
+async function initializeRedis() {
+  try {
+    await redisClient.connect();
+    console.log("Connected to Redis.");
+
+    // Seed Redis with data from Cosmos DB
+    for (const dbConfig of databaseConfigs) {
+      for (const containerConfig of dbConfig.containers) {
+        if (containerConfig.name === "Lots") {
+          const { container } = client.database(dbConfig.name).container(containerConfig.name);
+          const { resources: lots } = await container.items.readAll().fetchAll();
+
+          for (const lot of lots) {
+            if (lot.lotId && lot.auctionId) {
+              await redisClient.set(`lot:${lot.lotId}`, lot.auctionId);
+              console.log(`Seeded Redis: lot:${lot.lotId} -> ${lot.auctionId}`);
+            }
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error("Error initializing Redis:", error);
+  } finally {
+    await redisClient.disconnect();
+  }
+}
 
 async function initializeCosmosDB() {
   try {
@@ -53,6 +85,9 @@ async function initializeCosmosDB() {
     }
 
     console.log("Cosmos DB initialization completed successfully!");
+
+    // Initialize Redis after Cosmos DB
+    await initializeRedis();
   } catch (error) {
     console.error("Error initializing Cosmos DB:", error);
   }

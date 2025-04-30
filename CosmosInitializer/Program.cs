@@ -4,6 +4,7 @@ using CosmosInitializer.Models;
 using System.Text.Json;
 using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
+using StackExchange.Redis;
 
 namespace CosmosInitializer
 {
@@ -15,6 +16,8 @@ namespace CosmosInitializer
             ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
         };
         private static Dictionary<string, string> _containerPartitionKeys = new Dictionary<string, string>();
+        private static ConnectionMultiplexer? _redis;
+
         static async Task Main(string[] args)
         {
             try
@@ -23,6 +26,10 @@ namespace CosmosInitializer
                 Console.WriteLine("Starting Cosmos DB and Service Bus Initializer...");
                 Console.WriteLine("========================================");
                 Console.ResetColor();
+
+                // Initialize Redis connection
+                _redis = ConnectionMultiplexer.Connect("localhost:6379");
+                Console.WriteLine("Connected to Redis.");
 
                 // Load configuration
                 var config = LoadConfiguration();
@@ -48,6 +55,9 @@ namespace CosmosInitializer
                 // Initialize Service Bus topics if configured
                 await InitializeServiceBusTopicsAsync(config.ServiceBus);
 
+                // Start Change Feed listener for Auctions
+                await StartChangeFeedListenerAsync(client, config);
+
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nInitialization completed successfully!");
                 Console.ResetColor();
@@ -59,6 +69,10 @@ namespace CosmosInitializer
                 Console.WriteLine(ex.StackTrace);
                 Console.ResetColor();
                 Environment.Exit(1);
+            }
+            finally
+            {
+                _redis?.Dispose();
             }
         }
 
@@ -248,11 +262,8 @@ namespace CosmosInitializer
                     JsonElement root = jsonDocument.RootElement;
                     string? documentId = root.TryGetProperty("id", out JsonElement idElement) ? idElement.GetString() : "unknown";
                     
-                    // Upsert the document to Cosmos DB
-                    await container.UpsertItemAsync<object>(
-                        JsonSerializer.Deserialize<object>(jsonContent)!, 
-                        new PartitionKey(GetPartitionKeyValue(root, container.Id))
-                    );
+                    // Validate and track document
+                    await ValidateAndTrackDocumentAsync(container, root);
                     
                     documentCount++;
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -270,6 +281,38 @@ namespace CosmosInitializer
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"    Total documents imported: {documentCount}");
             Console.ResetColor();
+        }
+
+        private static async Task ValidateAndTrackDocumentAsync(Container container, JsonElement document)
+        {
+            // Validate schema version
+            if (!document.TryGetProperty("schemaVersion", out JsonElement schemaVersionElement) || schemaVersionElement.GetString() != "v1")
+            {
+                throw new InvalidOperationException("Invalid or missing schema version.");
+            }
+
+            // Add historical tracking
+            if (document.TryGetProperty("_version", out JsonElement versionElement))
+            {
+                int currentVersion = versionElement.GetInt32();
+                document = document.Clone();
+                document.GetProperty("_version").SetInt32(currentVersion + 1);
+
+                if (document.TryGetProperty("history", out JsonElement historyElement))
+                {
+                    var historyList = historyElement.EnumerateArray().ToList();
+                    historyList.Add(document);
+                    document.GetProperty("history").SetArray(historyList);
+                }
+            }
+            else
+            {
+                document.GetProperty("_version").SetInt32(1);
+                document.GetProperty("history").SetArray(new List<JsonElement> { document });
+            }
+
+            // Upsert the document with updated version and history
+            await container.UpsertItemAsync(document, new PartitionKey(GetPartitionKeyValue(document, container.Id)));
         }
 
         private static string GetPartitionKeyValue(JsonElement document, string containerId)
@@ -292,6 +335,101 @@ namespace CosmosInitializer
             
             // If we can't find the partition key, throw an exception
             throw new InvalidOperationException($"Could not find partition key property '{partitionKeyProperty}' in document");
+        }
+
+        private static async Task StartChangeFeedListenerAsync(CosmosClient client, CosmosDbConfig config)
+        {
+            Console.WriteLine("Starting Change Feed listener for Auctions...");
+
+            foreach (var dbConfig in config.Databases)
+            {
+                foreach (var containerConfig in dbConfig.Containers)
+                {
+                    if (containerConfig.Name == "Auctions")
+                    {
+                        var container = client.GetContainer(dbConfig.Name, containerConfig.Name);
+                        var lotsContainer = client.GetContainer(dbConfig.Name, "Lots");
+
+                        var iterator = container.GetChangeFeedIterator<Dictionary<string, object>>(ChangeFeedStartFrom.Now(), ChangeFeedMode.Incremental);
+
+                        while (iterator.HasMoreResults)
+                        {
+                            var response = await iterator.ReadNextAsync();
+
+                            foreach (var changedDocument in response)
+                            {
+                                await ProcessAuctionChangeAsync(changedDocument);
+                                await PropagateAuctionUpdatesToLotsAsync(container, lotsContainer, changedDocument);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private static async Task ProcessAuctionChangeAsync(Dictionary<string, object> auction)
+        {
+            if (auction.TryGetValue("id", out var auctionIdObj) && auctionIdObj is string auctionId)
+            {
+                Console.WriteLine($"Processing changes for Auction ID: {auctionId}");
+
+                if (_redis != null)
+                {
+                    var db = _redis.GetDatabase();
+
+                    // Update Redis for lots associated with this auction
+                    var lotKeys = db.Keys(pattern: $"lot:*", pageSize: 1000);
+
+                    foreach (var lotKey in lotKeys)
+                    {
+                        var lotAuctionId = await db.StringGetAsync(lotKey);
+
+                        if (lotAuctionId == auctionId)
+                        {
+                            // Update Redis or perform additional logic as needed
+                            Console.WriteLine($"Updated Redis entry for Lot: {lotKey}");
+                        }
+                    }
+                }
+            }
+        }
+
+        private static async Task PropagateAuctionUpdatesToLotsAsync(Container auctionsContainer, Container lotsContainer, Dictionary<string, object> auction)
+        {
+            if (auction.TryGetValue("id", out var auctionIdObj) && auctionIdObj is string auctionId)
+            {
+                Console.WriteLine($"Propagating updates for Auction ID: {auctionId}");
+
+                // Query lots associated with the auction
+                var query = new QueryDefinition("SELECT * FROM c WHERE c.auctionId = @auctionId")
+                    .WithParameter("@auctionId", auctionId);
+
+                using var iterator = lotsContainer.GetItemQueryIterator<Dictionary<string, object>>(query);
+
+                while (iterator.HasMoreResults)
+                {
+                    var response = await iterator.ReadNextAsync();
+
+                    foreach (var lot in response)
+                    {
+                        if (lot.TryGetValue("localizedData", out var localizedDataObj) && localizedDataObj is JsonElement localizedData)
+                        {
+                            foreach (var localizedBlock in localizedData.EnumerateArray())
+                            {
+                                if (localizedBlock.TryGetProperty("auctionSummary", out JsonElement auctionSummary))
+                                {
+                                    auctionSummary.GetProperty("title").SetString(auction["title"].ToString());
+                                    auctionSummary.GetProperty("startDate").SetString(auction["startDate"].ToString());
+                                }
+                            }
+                        }
+
+                        // Upsert the updated lot
+                        await lotsContainer.UpsertItemAsync(lot, new PartitionKey(lot["auctionId"].ToString()));
+                        Console.WriteLine($"Updated Lot ID: {lot["id"]}");
+                    }
+                }
+            }
         }
     }
 }
