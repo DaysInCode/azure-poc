@@ -27,15 +27,6 @@ services:
     volumes:
       - cosmos_data:/data/db
 
-  servicebus:
-    image: vromero/activemq-artemis:2.16.0
-    ports:
-      - "5672:5672" # AMQP port
-      - "8161:8161" # Web console
-    environment:
-      - ARTEMIS_USERNAME=admin
-      - ARTEMIS_PASSWORD=admin
-
   redis:
     image: redis:latest
     ports:
@@ -44,7 +35,48 @@ services:
       - redis_data:/data
     command: ["redis-server", "--appendonly", "yes"]
 
+  servicebus:
+    container_name: "servicebus-emulator"
+    image: mcr.microsoft.com/azure-messaging/servicebus-emulator:latest
+    volumes:
+      - ./servicebus-config.json:/ServiceBus_Emulator/ConfigFiles/Config.json:ro
+    ports:
+      - "5672:5672"
+      - "5000:5000"
+      - "9090:9090"
+    environment:
+      SQL_SERVER: sqledge
+      MSSQL_SA_PASSWORD: myStrongP@ssw0rd
+      ACCEPT_EULA: "Y"
+      SERVICEBUS_EMULATOR__DEFAULTUSER__USERNAME: admin
+      SERVICEBUS_EMULATOR__DEFAULTUSER__PASSWORD: admin
+      SERVICEBUS_EMULATOR__LOGGING__LOGLEVEL__DEFAULT: Information
+      SERVICEBUS_EMULATOR__CONFIG: /ServiceBus_Emulator/ConfigFiles/Config.json
+      SERVICEBUS_EMULATOR__SQL__CONNECTIONSTRING: Server=sqledge,1433;Database=servicebus;User Id=sa;Password=myStrongP@ssw0rd;TrustServerCertificate=true;
+    depends_on:
+      - sqledge
+    networks:
+      sb-emulator:
+        aliases:
+          - "sb-emulator"
+
+  sqledge:
+    container_name: "sqledge"
+    image: "mcr.microsoft.com/azure-sql-edge:latest"
+    networks:
+      sb-emulator:
+        aliases:
+          - "sqledge"
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: myStrongP@ssw0rd
+
 volumes:
   azurite_data:
   cosmos_data:
   redis_data:
+  sqledge_data:
+
+networks:
+  sb-emulator:
+    driver: bridge

@@ -2,11 +2,14 @@ using Microsoft.Azure.Cosmos;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var endpoint = builder.Configuration["CosmosDb:Endpoint"];
+var endpointPort = builder.Configuration["CosmosDb:Key"];
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddSingleton(new CosmosClient(
-    builder.Configuration["CosmosDb:Endpoint"],
-    builder.Configuration["CosmosDb:Key"]
+    endpoint,
+    endpointPort
 ));
 
 var app = builder.Build();

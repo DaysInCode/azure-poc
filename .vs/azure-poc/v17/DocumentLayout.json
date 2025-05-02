@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\code\\azure-poc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA47933F-84D9-33AB-0D3F-806EB57D781C}|CosmosInitializer\\CosmosInitializer.csproj|c:\\code\\azure-poc\\cosmosinitializer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA47933F-84D9-33AB-0D3F-806EB57D781C}|CosmosInitializer\\CosmosInitializer.csproj|solutionrelative:cosmosinitializer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10A22E00-3477-4D9D-BDE6-16700314BDF2}|AuctionLotAPI\\AuctionLotAPI.csproj|c:\\code\\azure-poc\\auctionlotapi\\auctionlotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10A22E00-3477-4D9D-BDE6-16700314BDF2}|AuctionLotAPI\\AuctionLotAPI.csproj|solutionrelative:auctionlotapi\\auctionlotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\code\\azure-poc\\CosmosInitializer\\CosmosInitializer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CosmosInitializer\\CosmosInitializer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10A22E00-3477-4D9D-BDE6-16700314BDF2}|AuctionLotAPI\\AuctionLotAPI.csproj|c:\\code\\azure-poc\\auctionlotapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10A22E00-3477-4D9D-BDE6-16700314BDF2}|AuctionLotAPI\\AuctionLotAPI.csproj|solutionrelative:auctionlotapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\code\\azure-poc\\CosmosInitializer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CosmosInitializer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pav\\.nuget\\packages\\microsoft.azure.cosmos\\3.49.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA47933F-84D9-33AB-0D3F-806EB57D781C}|CosmosInitializer\\CosmosInitializer.csproj|c:\\code\\azure-poc\\cosmosinitializer\\cosmosinitializer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BA47933F-84D9-33AB-0D3F-806EB57D781C}|CosmosInitializer\\CosmosInitializer.csproj|solutionrelative:cosmosinitializer\\cosmosinitializer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,7 +41,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "AuctionLotController.cs",
+              "DocumentMoniker": "C:\\code\\azure-poc\\AuctionLotAPI\\AuctionLotController.cs",
+              "RelativeDocumentMoniker": "AuctionLotAPI\\AuctionLotController.cs",
+              "ToolTip": "C:\\code\\azure-poc\\AuctionLotAPI\\AuctionLotController.cs",
+              "RelativeToolTip": "AuctionLotAPI\\AuctionLotController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T07:41:24.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\code\\azure-poc\\AuctionLotAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuctionLotAPI\\Program.cs",
+              "ToolTip": "C:\\code\\azure-poc\\AuctionLotAPI\\Program.cs",
+              "RelativeToolTip": "AuctionLotAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T07:36:46.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Microsoft.Azure.Cosmos.targets",
               "DocumentMoniker": "C:\\Users\\Pav\\.nuget\\packages\\microsoft.azure.cosmos\\3.49.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets",
               "RelativeDocumentMoniker": "..\\..\\Users\\Pav\\.nuget\\packages\\microsoft.azure.cosmos\\3.49.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets",
@@ -41,25 +75,24 @@
               "RelativeToolTip": "..\\..\\Users\\Pav\\.nuget\\packages\\microsoft.azure.cosmos\\3.49.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets",
               "ViewState": "AgIAACAAAAAAAAAAAAAAwDsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-04-30T08:02:13.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T08:02:13.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\code\\azure-poc\\CosmosInitializer\\Program.cs",
               "RelativeDocumentMoniker": "CosmosInitializer\\Program.cs",
               "ToolTip": "C:\\code\\azure-poc\\CosmosInitializer\\Program.cs",
               "RelativeToolTip": "CosmosInitializer\\Program.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAADwv7oAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T08:00:44.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CosmosInitializer.csproj",
               "DocumentMoniker": "C:\\code\\azure-poc\\CosmosInitializer\\CosmosInitializer.csproj",
               "RelativeDocumentMoniker": "CosmosInitializer\\CosmosInitializer.csproj",

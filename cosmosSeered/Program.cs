@@ -18,6 +18,9 @@ public class Options
 
     [Option("drop", Required = false, HelpText = "Drop and recreate containers.")]
     public bool DropAndCreate { get; set; } = false;
+
+    [Option("targetType", Required = true, HelpText = "Target type to seed: cosmos, redis, or serviceBus.")]
+    public string TargetType { get; set; } = "cosmos";
 }
 
 public class SeederService
@@ -132,8 +135,22 @@ class Program
         int exitCode = 0;
         await result.WithParsedAsync(async options =>
         {
-            var seeder = provider.GetRequiredService<SeederService>();
-            await seeder.RunAsync(options.Path, options.DropAndCreate);
+            switch (options.TargetType.ToLowerInvariant())
+            {
+                case "cosmos":
+                    var seeder = provider.GetRequiredService<SeederService>();
+                    await seeder.RunAsync(options.Path, options.DropAndCreate);
+                    break;
+                case "servicebus":
+                    await ServiceBusSeeder.RunAsync(options.Path, logger);
+                    break;
+                case "redis":
+                    logger.LogError("Redis seeding not implemented yet.");
+                    break;
+                default:
+                    logger.LogError("Unknown targetType: {TargetType}", options.TargetType);
+                    break;
+            }
         });
         result.WithNotParsed(errors =>
         {

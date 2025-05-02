@@ -1,0 +1,27 @@
+{
+  "queues": [
+    {
+      "name": "myqueue",
+      "properties": {
+        "maxDeliveryCount": 10,
+        "lockDuration": "PT1M"
+      }
+    }
+  ],
+  "topics": [
+    {
+      "name": "myTopic",
+      "properties": {
+        "defaultMessageTimeToLive": "P14D"
+      },
+      "subscriptions": [
+        {
+          "name": "defaultSubscription",
+          "properties": {
+            "maxDeliveryCount": 10
+          }
+        }
+      ]
+    }
+  ]
+}
