@@ -1,0 +1,189 @@
+{
+  "seedConfig": {
+    "id": "6430178",
+    "pk": "30193",
+    "db": "Lots"
+  },
+  "seedData": {
+    "id": "6430178",
+    "/pk": "2023",
+    "objectId": 6430178,
+    "number": "116",
+    "titles": {
+      "main": "Omoo, the Martin-Manney copy in the rare original wrappers",
+      "subTitle": "Herman Melville, 1847"
+    },
+    "descriptions": [
+      {
+        "type": "description",
+        "value": "Omoo, the Martin-Manney copy in the rare original wrappers<br>\nHerman Melville, 1847<br>\nMELVILLE, Herman (1819-1891). <i>Omoo: A Narrative of Adventures in the South Seas</i>. New York: Harper &amp; Brothers, Publishers, 1847.<br>\n <br>\n<b>The H. Bradley Martin-Richard Manney copy of the first American edition, in the scarce original wrappers</b>. Melville's sequel to <i>Typee</i>, describing his adventures in Tahiti. Rare: RBH records only two other copies selling at auction. BAL 13656. <br>\n<br>\nTwo volumes, octavo (182 x 129mm). Vol. 1 with half-title, title-page printed in black and red, and frontispiece map of the Marquesas and Tahiti; vol. 2 with adverts at rear paginated [xv]-xxiii, [1]-16 (light staining to prelims, lower corner clipped from endpaper in vol. 2). Original printed wrappers (wrappers darkened and rubbed; part 1 backstrip restored with part of title in facsimile; part 2 with abrasion to rear cover deleting some of the text); modern clamshell box. <i>Provenance</i>: \"Appleton\" (ownership inscription to inside front cover of part II) &#8211; H. Bradley Martin (his sale, Sotheby's New York, 30 January 1990, lot 2145) &#8211; Richard Manney (his sale, Sotheby's New York, 11 October 1991, lot 223).<br>\n"
+      }
+    ],
+    "auction": {
+      "id": 30193,
+      "type": "live",
+      "number": 22474,
+      "title": "The Bruce M. Lisman Collection of Important American Literature: Part One",
+      "startDate": "2023-06-15",
+      "endDate": "2023-06-15",
+      "status": "closed",
+      "locations": [
+        {
+          "key": "NYR",
+          "description": "New York",
+          "line1": "20 Rockefeller Center",
+          "city": "New York",
+          "statecode": "NY",
+          "postalcode": "10020",
+          "timezone": "EDT",
+          "email": "info@christies.com",
+          "phone": "+1 212 636 2000",
+          "fax": "+1 212 636 2399",
+          "href": "https://www.christies.com/images/locations/newyork.png",
+          "lat": "40.75878367806025",
+          "long": "-73.97992998361588"
+        }
+      ],
+      "registrationCloseDate": "2023-06-15T08:00:00",
+      "registrationCloseDateUtc": "2023-06-15T12:00:00Z",
+      "absenteeCloseDate": "2023-06-14T00:00:00",
+      "absenteeCloseDateUtc": "2023-06-14T04:00:00Z",
+      "auctionTimes": [
+        {
+          "beginLot": "1",
+          "endLot": "160",
+          "from": "2023-06-15T10:00:00",
+          "fromUtc": "2023-06-15T14:00:00Z",
+          "locationKey": "NYR"
+        }
+      ],
+      "viewingTimes": [
+        {
+          "from": "2023-06-10T10:00:00",
+          "fromUtc": "2023-06-10T14:00:00Z",
+          "to": "2023-06-10T17:00:00",
+          "toUtc": "2023-06-10T21:00:00Z",
+          "locationKey": "NYR"
+        },
+        {
+          "from": "2023-06-11T13:00:00",
+          "fromUtc": "2023-06-11T17:00:00Z",
+          "to": "2023-06-11T17:00:00",
+          "toUtc": "2023-06-11T21:00:00Z",
+          "locationKey": "NYR"
+        },
+        {
+          "from": "2023-06-12T10:00:00",
+          "fromUtc": "2023-06-12T14:00:00Z",
+          "to": "2023-06-12T17:00:00",
+          "toUtc": "2023-06-12T21:00:00Z",
+          "locationKey": "NYR"
+        },
+        {
+          "from": "2023-06-13T10:00:00",
+          "fromUtc": "2023-06-13T14:00:00Z",
+          "to": "2023-06-13T17:00:00",
+          "toUtc": "2023-06-13T21:00:00Z",
+          "locationKey": "NYR"
+        },
+        {
+          "from": "2023-06-14T10:00:00",
+          "fromUtc": "2023-06-14T14:00:00Z",
+          "to": "2023-06-14T17:00:00",
+          "toUtc": "2023-06-14T21:00:00Z",
+          "locationKey": "NYR"
+        },
+        {
+          "from": "2023-06-15T10:00:00",
+          "fromUtc": "2023-06-15T14:00:00Z",
+          "to": "2023-06-15T17:00:00",
+          "toUtc": "2023-06-15T21:00:00Z",
+          "locationKey": "NYR"
+        }
+      ]
+    },
+    "status": "Sold",
+    "departments": [
+      {
+        "id": 10,
+        "name": "Books & Manuscripts"
+      }
+    ],
+    "estimateOnRequest": false,
+    "estimates": [
+      {
+        "currency": "USD",
+        "low": 6000.0,
+        "high": 9000.0
+      }
+    ],
+    "media": [
+      {
+        "type": "Image",
+        "href": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0116_000(omoo_the_martin-manney_copy_in_the_rare_original_wrappers_herman_melvi050500).jpg?mode=max",
+        "alternateText": "Omoo, the Martin-Manney copy in the rare original wrappers"
+      }
+    ],
+    "primaryCurrency": "USD",
+    "price": {
+      "amount": 7560.0,
+      "amountDollar": 7560.0,
+      "type": "PriceRealised"
+    },
+    "_links": {
+      "self": {
+        "method": "GET",
+        "href": "https://apim.christies.com/lots/6430178"
+      },
+      "sale": {
+        "method": "GET",
+        "href": "https://www.christies.com/xsalesapix/api/salelanding/GetAllSaleDetails?languageid=1&saleid=30193&apikey=708878A1-95DB-4DC2-8FBD-1E8A1DCE703C&saleroomcode=&geolocation=&salenumber="
+      },
+      "previous": {
+        "method": "GET",
+        "href": "https://apim.christies.com/lots/6430177"
+      },
+      "next": {
+        "method": "GET",
+        "href": "https://apim.christies.com/lots/6430179"
+      },
+      "conditionOfSale": {
+        "method": "GET",
+        "href": "https://www.christies.com/media-library/pdf/conditions-of-sale/conditionsofsale-newyork-22mar23.pdf "
+      }
+    },
+    "_embedded": {
+      "contacts": [
+        {
+          "id": "1591",
+          "departments": [
+            {
+              "id": 10,
+              "name": "Books & Manuscripts"
+            }
+          ],
+          "fullName": "Heather Weintraub",
+          "email": "hweintraub@christies.com",
+          "phone": "+1 212 636 2673",
+          "position": "Specialist, Books, Manuscripts, & Archives",
+          "biography": "Heather Weintraub joined Christie's New York as a Specialist in the Books & Manuscripts department in 2017. In this role, she sources, appraises, and catalogues all manner of printed books, literary manuscripts, and archives for auction and private sale.<br><br>\r\nIn her time at Christie's, Heather has contributed to a wide variety of auctions. She helped lead The Exceptional Literature Collection of Theodore B. Baum ($9,657,875, September 2021), which set a record for a printed work by a woman with the first edition of Mary Shelley's Frankenstein in original boards ($1,170,000). In addition to the Shelley, a personal favorite from the sale was a first edition of Jane Austen's Mansfield Park that had contemporary circulating library notes written on the covers. Heather also had the joy of cataloguing many books from The Herman Melville Collection of William S. Reese (September 2022), including a first edition of The Whale in original cloth (realizing $302,400) and Melville's own copy of Dante ($441,000).<br><br>\r\nHeather holds an A.B. in English from Vassar College, where she concentrated in Medieval and Renaissance Studies. She worked in the New York book trade while pursuing an M.L.S. from Pratt Institute with a certificate in Archives and a concentration in Special Collections. She is currently a member of the Grolier Club, where she serves on the Publications Committee.",
+          "images": {
+            "alt": "Heather Weintraub",
+            "primaryImage": {
+              "href": "https://www.christies.com/img/specialistImages/pisani_heather__Heather_Pisani_1591.jpg"
+            },
+            "smallImage": {
+              "href": "https://www.christies.com/img/specialistImages/pisani_heather__Heather_Pisani_1591.jpg"
+            },
+            "mediumImage": {
+              "href": "https://www.christies.com/img/specialistImages/pisani_heather__Heather_Pisani_1591.jpg"
+            },
+            "largeImage": {
+              "href": "https://www.christies.com/img/specialistImages/pisani_heather__Heather_Pisani_1591.jpg"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

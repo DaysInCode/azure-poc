@@ -1,0 +1,471 @@
+{
+  "seedConfig": {
+    "id": "30193",
+    "pk": "2023",
+    "db": "Auction"
+  },
+  "seedData": {
+    "id": 30193,
+    "number": 22474,
+    "status": "closed",
+    "type": "live",
+    "title": [
+      {
+        "type": "main",
+        "lng": "en",
+        "value": "The Bruce M. Lisman Collection of Important American Literature: Part One"
+      }
+    ],
+    "startDate": "2023-06-15",
+    "endDate": "2023-06-15",
+    "absenteeCloseDate": "2023-06-14T00:00:00",
+    "absenteeCloseDateUTC": "2023-06-14T04:00:00Z",
+    "locations": [
+      {
+        "key": "NYR",
+        "description": "New York",
+        "line1": "20 Rockefeller Center",
+        "city": "New York",
+        "statecode": "NY",
+        "postalcode": "10020",
+        "timezone": "EDT",
+        "email": "info@christies.com",
+        "phone": "+1 212 636 2000",
+        "fax": "+1 212 636 2399",
+        "href": "https://www.christies.com/images/locations/newyork.png",
+        "lat": "40.75878367806025",
+        "long": "-73.97992998361588"
+      },
+      {
+        "key": "PAR",
+        "description": "Paris",
+        "line1": "9 Avenue Matignon",
+        "city": "Paris",
+        "postalcode": "75008",
+        "timezone": "CEST",
+        "email": "clientservicesparis@christies.com",
+        "phone": "+33 (0) 1 40 76 85 85",
+        "href": "https://www.christies.com/images/locations/paris.png",
+        "lat": "48.87004138976374",
+        "long": "2.3117490112781525"
+      }
+    ],
+    "auctionTimes": [
+      {
+        "beginLot": "1",
+        "endLot": "160",
+        "from": "2023-06-15T10:00:00",
+        "fromUtc": "2023-06-15T14:00:00Z",
+        "locationKey": "NYR"
+      }
+    ],
+    "viewingTimes": [
+      {
+        "from": "2023-06-10T10:00:00",
+        "fromUtc": "2023-06-10T14:00:00Z",
+        "to": "2023-06-10T17:00:00",
+        "toUtc": "2023-06-10T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2023-06-11T13:00:00",
+        "fromUtc": "2023-06-11T17:00:00Z",
+        "to": "2023-06-11T17:00:00",
+        "toUtc": "2023-06-11T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2023-06-12T10:00:00",
+        "fromUtc": "2023-06-12T14:00:00Z",
+        "to": "2023-06-12T17:00:00",
+        "toUtc": "2023-06-12T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2023-06-13T10:00:00",
+        "fromUtc": "2023-06-13T14:00:00Z",
+        "to": "2023-06-13T17:00:00",
+        "toUtc": "2023-06-13T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2023-06-14T10:00:00",
+        "fromUtc": "2023-06-14T14:00:00Z",
+        "to": "2023-06-14T17:00:00",
+        "toUtc": "2023-06-14T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2023-06-15T10:00:00",
+        "fromUtc": "2023-06-15T14:00:00Z",
+        "to": "2023-06-15T17:00:00",
+        "toUtc": "2023-06-15T21:00:00Z",
+        "locationKey": "NYR"
+      }
+    ],
+    "descriptions": [
+      {
+        "type": "saleOverview",
+        "lng": "en",
+        "value": "<p>Christie's is pleased to announce its upcoming live auction, <em>The Bruce M. Lisman Collection of Important American Literature: Part One</em>, taking place on 15 June at 10am. Part One features a wealth of printed books and manuscripts from some of the most important writers of the 18th and 19th century: Phillis Wheatley Peters (including the first edition of <em>Poems on Various Subjects, Religious and Moral</em>), Washington Irving (<em>Salmagundi</em> and <em>The Sketch Book</em>, both in original wrappers, along with autograph manuscripts and letters), James Fenimore Cooper (<em>The Water Witch</em>, printed in Dresden), Henry Wadsworth Longfellow (a rare first issue of <em>Evangeline</em> in original boards, along with numerous autograph manuscripts and presentation copies), Edgar Allan Poe (<em>Tales of the Grotesque and Arabesqu</em>e inscribed to his cousin), Harriet Beecher Stowe (<em>Uncle Tom's Cabin</em> in original parts from the <em>National Era</em>, as well as an autograph letter appealing to help an enslaved minister purchase his freedom), Nathaniel Hawthorne (see below), Herman Melville (the rarest of the triple-deckers, <em>The Whale</em>), Walt Whitman (an autograph manuscript from <em>Leaves of Grass</em>, along with the rare Emerson broadside accompanying the 1855 first edition), and Samuel Clemens (fine first editions of <em>Huck Finn</em> and <em>Tom Sawyer</em>, as well as an autograph letter to his future father-in-law, defending his reputation). Notably the collection of Hawthorne is the finest in private hands, beginning with the author's heavily annotated proofs for his masterpiece, <em>The Scarlet Letter</em>. Other books and manuscripts include a family copy of <em>The Scarlet Letter</em>, together with the only known manuscript excerpt from the novel in private hands; rare presentation copies of the novels and tales; first printings of stories from gift-books, annuals, and magazines; autograph letters; books from his library; a linen bag dating from his days at Bowdoin College; and more.<br /><br />Highlights will be on view at Christie's New York from 20&ndash;24 May, coinciding with <a href=\"https://www.christies.com/en/events/old-master-week/what-is-on\" target=\"_blank\">Old Master Week</a>.<br /><br /><br /></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }
+    ],
+    "currency": "USD",
+    "media": [
+      {
+        "type": "image",
+        "href": "https://www.christies.com/img/SaleImages/NYR-22474-06152023-1.jpg",
+        "alternateText": "The Bruce M. Lisman Collection of Important American Literature: Part One"
+      }
+    ],
+    "departments": [
+      {
+        "lng": "en",
+        "id": 10,
+        "name": "Books & Manuscripts"
+      }
+    ],
+    "_links": {
+      "self": {
+        "method": "GET",
+        "href": "https://api-prod.christies.com/prod/auction/30193"
+      },
+      "conditionOfSale": {
+        "method": "GET",
+        "lng": "en",
+        "href": "https://www.christies.com/media-library/pdf/conditions-of-sale/conditionsofsale-newyork-22mar23.pdf "
+      },
+      "viewResults": {
+        "method": "GET",
+        "lng": "en",
+        "href": "https://www.christies.com/results/printauctionresults.aspx?saleid=30193&lid=1"
+      },
+      "catalog": {
+        "method": "GET",
+        "lng": "en",
+        "href": "https://www.christies.com/PDF/catalog/2023/NYR22474_SaleCat.pdf"
+      }
+    },
+    "related": [
+      {
+        "lng": "en",
+        "number": 23689,
+        "id": 30745,
+        "title": "Cabinet des livres de Pierre Brossette",
+        "type": "Auction",
+        "auctionType": "live",
+        "startDate": "2025-05-22T00:00:00",
+        "endDate": "2025-05-22T00:00:00",
+        "image": "https://www.christies.com/img/SaleImages/PAR-23689-05222025-1.jpg",
+        "location": "PAR",
+        "onView": true
+      },
+      {
+        "lng": "en",
+        "number": 23946,
+        "id": 30930,
+        "title": "Maurice Sendak: Artist, Collector, Connoisseur ",
+        "type": "Auction",
+        "auctionType": "live",
+        "startDate": "2025-06-10T00:00:00",
+        "endDate": "2025-06-10T00:00:00",
+        "image": "https://www.christies.com/img/SaleImages/NYR-23946-06102025-1.jpg",
+        "location": "NYR",
+        "onView": true
+      },
+      {
+        "lng": "en",
+        "number": 23979,
+        "id": 30940,
+        "title": "Maurice Sendak: Artist, Collector, Connoisseur Online",
+        "type": "Auction",
+        "auctionType": "onlineOnly",
+        "startDate": "2025-05-29T00:00:00",
+        "endDate": "2025-06-12T00:00:00",
+        "image": "https://www.christies.com/img/SaleImages/NYR-23979-05292025-1.jpg",
+        "location": "NYR",
+        "onView": false
+      }
+    ],
+    "_embedded": {
+      "contacts": [
+        {
+          "lng": "en",
+          "id": "1591",
+          "departments": [
+            {
+              "id": 10,
+              "name": "Books & Manuscripts"
+            }
+          ],
+          "fullName": "Heather Weintraub",
+          "email": "hweintraub@christies.com",
+          "phone": "+1 212 636 2673",
+          "position": "Specialist, Books, Manuscripts, & Archives",
+          "biography": "Heather Weintraub joined Christie's New York as a Specialist in the Books & Manuscripts department in 2017. In this role, she sources, appraises, and catalogues all manner of printed books, literary manuscripts, and archives for auction and private sale.<br><br>\r\nIn her time at Christie's, Heather has contributed to a wide variety of auctions. She helped lead The Exceptional Literature Collection of Theodore B. Baum ($9,657,875, September 2021), which set a record for a printed work by a woman with the first edition of Mary Shelley's Frankenstein in original boards ($1,170,000). In addition to the Shelley, a personal favorite from the sale was a first edition of Jane Austen's Mansfield Park that had contemporary circulating library notes written on the covers. Heather also had the joy of cataloguing many books from The Herman Melville Collection of William S. Reese (September 2022), including a first edition of The Whale in original cloth (realizing $302,400) and Melville's own copy of Dante ($441,000).<br><br>\r\nHeather holds an A.B. in English from Vassar College, where she concentrated in Medieval and Renaissance Studies. She worked in the New York book trade while pursuing an M.L.S. from Pratt Institute with a certificate in Archives and a concentration in Special Collections. She is currently a member of the Grolier Club, where she serves on the Publications Committee.",
+          "images": {
+            "alt": "Heather Weintraub",
+            "primaryImage": {
+              "href": "https://www.christies.com/img/specialistImages/pisani_heather__Heather_Pisani_1591.jpg"
+            }
+          }
+        }
+      ]
+    },
+    "highlightedLots": [
+      {
+        "lng": "en",
+        "id": "6430069",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0007_000(salmagundi_uncut_in_original_wrappers_washington_irving_1807043104).jpg?mode=max",
+        "mainTitle": "Salmagundi, uncut in original wrappers",
+        "subTitle": "Washington Irving, 1807",
+        "lotNumber": "7",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 40000.0,
+          "high": 60000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430070",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0008_000(the_sketch_book_in_original_wrappers_washington_irving_1819043122).jpg?mode=max",
+        "mainTitle": "The Sketch Book, in original wrappers",
+        "subTitle": "Washington Irving, 1819",
+        "lotNumber": "8",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 40000.0,
+          "high": 60000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430063",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0001_000(poems_on_various_subjects_religious_and_moral_phillis_wheatley_peters042950).jpg?mode=max",
+        "mainTitle": "Poems on Various Subjects, Religious and Moral",
+        "subTitle": "Phillis Wheatley Peters, 1773",
+        "lotNumber": "1",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 20000.0,
+          "high": 30000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430084",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0022_000(the_water_witch_or_the_skimmer_of_the_seas_james_fenimore_cooper_1830043419).jpg?mode=max",
+        "mainTitle": "The Water Witch or the Skimmer of the Seas",
+        "subTitle": "James Fenimore Cooper, 1830",
+        "lotNumber": "22",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 10000.0,
+          "high": 15000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430097",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0035_000(tales_of_the_grotesque_and_arabesque_inscribed_edgar_allan_poe_1840043634).jpg?mode=max",
+        "mainTitle": "Tales of the Grotesque and Arabesque, inscribed",
+        "subTitle": "Edgar Allan Poe, 1840",
+        "lotNumber": "35",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 300000.0,
+          "high": 500000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430100",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0038_000(tales_in_wrappers_edgar_allan_poe_1845043721).jpg?mode=max",
+        "mainTitle": "Tales, in wrappers",
+        "subTitle": "Edgar Allan Poe, 1845",
+        "lotNumber": "38",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 40000.0,
+          "high": 60000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430105",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0043_000(evangeline_a_tale_of_acadie_henry_wadsworth_longfellow_1847043825).jpg?mode=max",
+        "mainTitle": "Evangeline: A Tale of Acadie",
+        "subTitle": "Henry Wadsworth Longfellow, 1847",
+        "lotNumber": "43",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 4000.0,
+          "high": 6000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430118",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0056_000(prize_tale_a_new_england_sketch_harriet_beecher_1834044156).jpg?mode=max",
+        "mainTitle": "Prize Tale. A New England Sketch",
+        "subTitle": "Harriet Beecher, 1834",
+        "lotNumber": "56",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 15000.0,
+          "high": 25000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430119",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0057_000(uncle_toms_cabin_or_life_among_the_lowly_in_the_national_era_harriet_b044209).jpg?mode=max",
+        "mainTitle": "\"Uncle Tom's Cabin; Or, Life among the Lowly,\" in <i>The National Era</i>",
+        "subTitle": "Harriet Beecher Stowe, June 1851-April 1852",
+        "lotNumber": "57",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 30000.0,
+          "high": 40000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430122",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0060_000(an_appeal_to_help_an_enslaved_minister_purchase_his_freedom_harriet_be044251).jpg?mode=max",
+        "mainTitle": "An appeal to help an enslaved minister purchase his freedom",
+        "subTitle": "Harriet Beecher Stowe, ca. May 1852",
+        "lotNumber": "60",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 15000.0,
+          "high": 25000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430131",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0069_000(fanshawe_the_engelhard-chrysler_copy_nathaniel_hawthorne_1828044444).jpg?mode=max",
+        "mainTitle": "Fanshawe, the Engelhard-Chrysler copy",
+        "subTitle": "Nathaniel Hawthorne, 1828",
+        "lotNumber": "69",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 18000.0,
+          "high": 25000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430138",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0076_000(the_sister_years_nathaniel_hawthorne_1839044640).jpg?mode=max",
+        "mainTitle": "The Sister Years",
+        "subTitle": "Nathaniel Hawthorne, 1839",
+        "lotNumber": "76",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 20000.0,
+          "high": 30000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430151",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0089_000(the_scarlet_letter_corrected_page_proofs_nathaniel_hawthorne_1850044932).jpg?mode=max",
+        "mainTitle": "The Scarlet Letter corrected page proofs",
+        "subTitle": "Nathaniel Hawthorne, 1850",
+        "lotNumber": "89",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 600000.0,
+          "high": 800000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430154",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0092_000(the_scarlet_letter_the_chamberlain-armstrong-adams_copy_with_autograph045130).jpg?mode=max",
+        "mainTitle": "The Scarlet Letter, the Chamberlain-Armstrong-Adams copy with autograph letter",
+        "subTitle": "Nathaniel Hawthorne, 1850",
+        "lotNumber": "92",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 12000.0,
+          "high": 18000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430166",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0104_000(a_rare_signed_photograph_by_brady_nathaniel_hawthorne_ca_1862045424).jpg?mode=max",
+        "mainTitle": "A rare signed photograph by Brady",
+        "subTitle": "Nathaniel Hawthorne, ca. 1862",
+        "lotNumber": "104",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 7000.0,
+          "high": 10000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430152",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0090_000(the_scarlet_letter_signed_family_copy_with_autograph_manuscript_nathan045052).jpg?mode=max",
+        "mainTitle": "The Scarlet Letter, signed family copy with autograph manuscript",
+        "subTitle": "Nathaniel Hawthorne, 1850",
+        "lotNumber": "90",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 100000.0,
+          "high": 150000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430188",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0126_000(the_whale_the_silver_copy_in_a_contemporary_binding_herman_melville_18045807).jpg?mode=max",
+        "mainTitle": "The Whale, the Silver copy in a contemporary binding",
+        "subTitle": "Herman Melville, 1851",
+        "lotNumber": "126",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 120000.0,
+          "high": 180000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6430203",
+        "image": "https://www.christies.com/img/LotImages/2023/NYR/2023_NYR_22474_0141_000(8220i_greet_you_at_the_beginning_of_a_great_career8221_first_edition_o050017).jpg?mode=max",
+        "mainTitle": "“I greet you at the beginning of a great career...”",
+        "subTitle": "First edition of Leaves of Grass, with Emerson broadside",
+        "lotNumber": "141",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 200000.0,
+          "high": 300000.0
+        }
+      }
+    ],
+    "auctionTotal": 2686950
+  }
+}

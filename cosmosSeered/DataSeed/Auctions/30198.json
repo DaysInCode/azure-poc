@@ -1,0 +1,443 @@
+{
+  "seedConfig": {
+    "id": "30198",
+    "pk": "2023",
+    "db": "Auction"
+  },
+  "seedData": {
+    "id": 30198,
+    "number": 22505,
+    "status": "closed",
+    "type": "onlineOnly",
+    "title": [
+      {
+        "type": "main",
+        "lng": "en",
+        "value": "Modern Collector: Design and Tiffany"
+      }
+    ],
+    "startDate": "2024-02-28",
+    "endDate": "2024-03-12",
+    "locations": [
+      {
+        "key": "NYR",
+        "description": "New York",
+        "line1": "20 Rockefeller Center",
+        "city": "New York",
+        "statecode": "NY",
+        "postalcode": "10020",
+        "timezone": "EST",
+        "email": "info@christies.com",
+        "phone": "+1 212 636 2000",
+        "fax": "+1 212 636 2399",
+        "href": "https://www.christies.com/images/locations/newyork.png",
+        "lat": "40.75878367806025",
+        "long": "-73.97992998361588"
+      },
+      {
+        "key": "PAR",
+        "description": "Paris",
+        "line1": "9 Avenue Matignon",
+        "city": "Paris",
+        "postalcode": "75008",
+        "timezone": "CEST",
+        "email": "clientservicesparis@christies.com",
+        "phone": "+33 (0) 1 40 76 85 85",
+        "href": "https://www.christies.com/images/locations/paris.png",
+        "lat": "48.87004138976374",
+        "long": "2.3117490112781525"
+      }
+    ],
+    "auctionTimes": [
+      {
+        "from": "2024-02-28T10:00:00",
+        "fromUtc": "2024-02-28T15:00:00Z",
+        "to": "2024-03-12T10:00:00",
+        "toUtc": "2024-03-12T14:00:00Z",
+        "locationKey": "NYR"
+      }
+    ],
+    "viewingTimes": [
+      {
+        "from": "2024-03-07T10:00:00",
+        "fromUtc": "2024-03-07T15:00:00Z",
+        "to": "2024-03-07T17:00:00",
+        "toUtc": "2024-03-07T22:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2024-03-08T10:00:00",
+        "fromUtc": "2024-03-08T15:00:00Z",
+        "to": "2024-03-08T17:00:00",
+        "toUtc": "2024-03-08T22:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2024-03-09T10:00:00",
+        "fromUtc": "2024-03-09T15:00:00Z",
+        "to": "2024-03-09T17:00:00",
+        "toUtc": "2024-03-09T22:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2024-03-10T13:00:00",
+        "fromUtc": "2024-03-10T17:00:00Z",
+        "to": "2024-03-10T17:00:00",
+        "toUtc": "2024-03-10T21:00:00Z",
+        "locationKey": "NYR"
+      },
+      {
+        "from": "2024-03-11T10:00:00",
+        "fromUtc": "2024-03-11T14:00:00Z",
+        "to": "2024-03-11T17:00:00",
+        "toUtc": "2024-03-11T21:00:00Z",
+        "locationKey": "NYR"
+      }
+    ],
+    "descriptions": [
+      {
+        "type": "saleOverview",
+        "lng": "en",
+        "value": "<p>Comprising over 150 lots, Modern Collector: Design and Tiffany spans the last century of furniture, lighting and sculpture design by artists and architects across the globe. Featuring Favrile glass and celebrated lighting by the renowned Tiffany Studios; Art Deco master cabinetmakers &Eacute;mile-Jacques Ruhlmann, Jean Dunand and Pierre Chareau; contemporary pioneers Gaetano Pesce, Dale Chihuly, Johnny Swing and Forrest Meyers; and more, this sale offers the opportunity to collect iconic design from a groundbreaking century in creativity and art.<br /><br /><em><strong>*Viewing is 28 February &ndash; 11 March, by appointment only. Please contact <a href=\"mailto:emcintosh@christies.com\">Ellie McIntosh</a>&nbsp;at +917 863 7219 to arrange.</strong></em><br /><br /></p>"
+      }
+    ],
+    "currency": "USD",
+    "media": [
+      {
+        "type": "image",
+        "href": "https://www.christies.com/img/SaleImages/NYR-22505-02282024-1.jpg",
+        "alternateText": "Modern Collector: Design and Tiffany"
+      }
+    ],
+    "departments": [
+      {
+        "lng": "en",
+        "id": 59,
+        "name": "Design"
+      }
+    ],
+    "_links": {
+      "self": {
+        "method": "GET",
+        "href": "https://api-prod.christies.com/prod/auction/30198"
+      },
+      "conditionOfSale": {
+        "method": "GET",
+        "lng": "en",
+        "href": "https://www.christies.com/pdf/onlineonly/EcommerceConditionsOfSale-BespokeNY-24OCT23.PDF"
+      },
+      "viewResults": {
+        "method": "GET",
+        "lng": "en",
+        "href": "https://www.christies.com/results/printauctionresults.aspx?saleid=30198&lid=1"
+      }
+    },
+    "related": [
+      {
+        "lng": "en",
+        "number": 23795,
+        "id": 30807,
+        "title": "Design",
+        "type": "Auction",
+        "auctionType": "live",
+        "startDate": "2025-05-21T00:00:00",
+        "endDate": "2025-05-21T00:00:00",
+        "image": "https://www.christies.com/img/SaleImages/PAR-23795-05212025-1.jpg",
+        "location": "PAR",
+        "onView": true
+      },
+      {
+        "lng": "en",
+        "number": 24120,
+        "id": 30964,
+        "title": "American Avant-Garde: The James D. Zellerbach Residence by Frances Elkins",
+        "type": "Auction",
+        "auctionType": "live",
+        "startDate": "2025-06-12T00:00:00",
+        "endDate": "2025-06-12T00:00:00",
+        "image": "https://www.christies.com/img/SaleImages/NYR-24120-06122025-1.jpg",
+        "location": "NYR",
+        "onView": true
+      }
+    ],
+    "_embedded": {
+      "contacts": [
+        {
+          "lng": "en",
+          "id": "1936",
+          "departments": [
+            {
+              "id": 59,
+              "name": "Design"
+            }
+          ],
+          "fullName": "Victoria Allerton Tudor",
+          "email": "vtudor@christies.com",
+          "phone": "718 710 2136",
+          "position": "Vice President, Specialist, Head of Sale",
+          "biography": "Victoria Tudor began her career with christie’s in 2008 based in New York. As a Specialist with the Decorative Arts department and a contributing member of the Private and Iconic Collections team, Victoria participated in important sales The Private Collection of President & Mrs. Ronald Reagan (2016); the landmark sale of The Peggy and David Rockefeller Collection (2018); and oversale the single owner sale of affable art and antiques dealer Mr. Joel Chen of JF Chen, Los Angeles, Ca. (2018). The opportunity to celebrate the marriage of antique and 20th century design appeared again as Victoria acted as the head of sale for The Collection of A. Jerrold Perenchio (2020), the concurrent single owner online sales of renowned French interior designer Henri Samuel interiors; and contributed as head of Design in the Sacred and Imperial: The James and Marilynn Alsdorf Collection (2020). In 2021, Victoria joined the Design department as Head of Sale to spearhead the New York calendar of sales for the dedicated department. <br>\r\n<br> \r\nIn Design, Victoria has lead the team to increased marketshare and exponential growth for the category – through a combination of various owner and single owner sale opportunities. As head of sale for Design and Tiffany sales annually, in addition to key roles in unique opportunities such as Tiffany Masterworks from the Garden Museum: A Private Collection (2022), Victoria has also implemented the first mid-season online auction series Modern Collector beginning in Spring 2022.   \r\nA native of Chicago, Illinois, Victoria received her Bachelor’s from Bowdoin College in Maine with a focus in Latin American Literature, Spanish Language and International Relations. She has her Colored Stones certification from the Gemological Institute of America and is serving as an auctioneer for Christie’s since 2021.",
+          "images": {
+            "alt": "Victoria Allerton Tudor",
+            "primaryImage": {
+              "href": "https://www.christies.com/img/specialistImages/tudorvictoriacbw360x450__Victoria_AllertonTudor_9.jpg"
+            }
+          }
+        },
+        {
+          "lng": "en",
+          "id": "1652",
+          "departments": [
+            {
+              "id": 59,
+              "name": "Design"
+            }
+          ],
+          "fullName": "Daphné Riou",
+          "email": "DRiou@christies.com",
+          "phone": "+1 212 468 7124",
+          "position": "SVP, Senior Specialist, Head of Americas",
+          "biography": "Daphné Riou joined Christie’s New York in 2018 as the Head of the Design department.<br><br>\r\n\r\nPrior to joining Christie’s, Daphné worked at Sotheby’s for six years, where she held various positions in the Design departments in Paris, London and finally in New York for four years, where she oversaw the sale of several masterworks and important private collections of 20th Century Design.<br><br>\r\n\r\nDaphné graduated from HEC Paris business school, earning a master in Art & Creation management and studied art history at the Ecole du Louvre in Paris. <br><br>\r\n\r\nShe started her career in the auction world working at Christie’s Paris, with the legendary sales of the Château de Gourdon collections which totalized 42 million euros in March 2011.<br><br>\r\n\r\n In her past year working at Christie’s, Daphné oversaw the sale of the 'Pond Lily' Lamp that sold for $3.4M in December 2018, a world record for any work by Tiffany, and the record breaking sale of the cabinet by Eugène Printz and Jean Dunand which sold for $5,496,000 in June 2019.<br><br><br>\r\n\r\n\r\nDaphné Riou a rejoint Christie's New York en 2018 en tant que responsable du département Design.<br><br>\r\n\r\nAvant de rejoindre Christie's, Daphné a travaillé chez Sotheby's pendant six ans, où elle a occupé différents postes au sein des départements Design à Paris, à Londres et enfin à New York pendant quatre ans, où elle a supervisé la vente de plusieurs chefs-d'œuvre et d'importantes collections privées de Design du 20ème siècle.<br><br>\r\n\r\nDaphné est diplômée de l'école de commerce HEC Paris, où elle a obtenu un master en management de l'art et de la création artistique, et a étudié l'histoire de l'art à l'Ecole du Louvre à Paris. <br><br>\r\n\r\nElle a commencé sa carrière dans le monde des enchères en travaillant chez Christie's Paris, avec la vente légendaire des collections du Château de Gourdon qui a totalisé 42 millions d'euros en mars 2011.<br><br>\r\n\r\nDernièrement, Daphné a supervisé la vente de la lampe 'Pond Lily' qui s'est vendue pour 3,4 millions de dollars en décembre 2018, un record mondial pour toute œuvre de Tiffany, et la vente record du cabinet d'Eugène Printz et Jean Dunand qui s'est vendue pour 5 496 000 dollars, en juin 2019.",
+          "images": {
+            "alt": "Daphné Riou",
+            "primaryImage": {
+              "href": "https://www.christies.com/img/specialistImages/rioudaphnebwb__Daphn_Daphn_1652.jpg"
+            }
+          }
+        },
+        {
+          "lng": "en",
+          "id": "1687",
+          "departments": [
+            {
+              "id": 59,
+              "name": "Design"
+            }
+          ],
+          "fullName": "Alexander Heminway",
+          "email": "AHeminway@christies.com",
+          "phone": "+1 212 636 2016",
+          "position": "International Head of Design",
+          "biography": "Alex Heminway is a Senior Vice President and International Head of Design at Christie’s, New York. In his current role, Mr. Heminway is responsible for the global management of the department, which focuses on twentieth- and twenty-first-century decoratitive arts and design. The department holds multiple annual auctions in its various sale sites including New York, London, and Paris. He oversees business strategy with other sale departments, including Post-War and Contemporary Art. In 2019, after nine years at another international auction house, Mr. Heminway returned to Christie’s, where he began his career in 1993. Prior to this most recent auction experience, Mr. Heminway worked at Cove Landing, Manhattan-based dealers in eighteenth- and nineteenth-century English and Continental furniture, fine art, and sculpture. Prior to that he worked in sales for post-war and contemporary art dealer Gagosian Gallery, Los Angeles, where he also worked on painter Ed Ruscha’s catalogue raisonné. Mr. Heminway has worked in the auction and gallery business in both fine and decorative arts for more than sixteen years between 1993 and the present",
+          "images": {
+            "alt": "Alexander Heminway",
+            "primaryImage": {
+              "href": "https://www.christies.com/img/specialistImages/heminwayalex__Alexander_Alexander_1687.jpg"
+            }
+          }
+        }
+      ]
+    },
+    "highlightedLots": [
+      {
+        "lng": "en",
+        "id": "6471316",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0021_000(edgar_brandt_8216la_foret8217_firescreen_circa_1925101704).jpg?mode=max",
+        "mainTitle": "EDGAR BRANDT (1880-1960)",
+        "subTitle": "‘La Fôret’ Firescreen, circa 1925",
+        "lotNumber": "21",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 50000.0,
+          "high": 70000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471356",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0061_000(line_vautrin_a_la_gloire_des_phoques_brooch_circa_1946102630).jpg?mode=max",
+        "mainTitle": "LINE VAUTRIN (1913-1997)",
+        "subTitle": "'À La Gloire des Phoques' Brooch, circa 1946",
+        "lotNumber": "61",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 1000.0,
+          "high": 1500.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471452",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0157_000(daum_landscape_table_lamp_circa_1900113553).jpg?mode=max",
+        "mainTitle": "DAUM",
+        "subTitle": "‘Fougères et Arbres’ Table Lamp, circa 1906",
+        "lotNumber": "157",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 8000.0,
+          "high": 12000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471370",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0075_000(lucie_rie_beaker_and_saucer_circa_1970022210).jpg?mode=max",
+        "mainTitle": "LUCIE RIE (1902-1995)",
+        "subTitle": "Beaker and Saucer, circa 1970",
+        "lotNumber": "75",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 1000.0,
+          "high": 1500.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471362",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0067_000(jean-boris_lacroix_ceiling_light_circa_1960120126).jpg?mode=max",
+        "mainTitle": "JEAN-BORIS LACROIX (1902-1984)",
+        "subTitle": "Ceiling Light, circa 1960",
+        "lotNumber": "67",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 15000.0,
+          "high": 20000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471412",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0117_000(warren_platner_easy_chair_and_ottoman_designed_circa_1966110612).jpg?mode=max",
+        "mainTitle": "WARREN PLATNER (1919-2006)",
+        "subTitle": "Easy Chair and Ottoman, designed circa 1966",
+        "lotNumber": "117",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 3000.0,
+          "high": 5000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471305",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0010_000(tiffany_studios_paperweight_vase_circa_1900-1903123828).jpg?mode=max",
+        "mainTitle": "TIFFANY STUDIOS",
+        "subTitle": "Paperweight Vase, circa 1900-1903",
+        "lotNumber": "10",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 2000.0,
+          "high": 3000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471423",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0128_000(frank_lloyd_wright_pair_of_windows_from_the_avery_coonley_gardener8217111525).jpg?mode=max",
+        "mainTitle": "FRANK LLOYD WRIGHT (1867-1959)",
+        "subTitle": "Pair of Windows from The Avery Coonley Gardener’s Cottage, Riverside, Illinois, circa 1908",
+        "lotNumber": "128",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 6000.0,
+          "high": 8000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471446",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0151_000(louis_majorelle_orchidee_inkwell_circa_1905113143).jpg?mode=max",
+        "mainTitle": "LOUIS MAJORELLE (1859-1926)",
+        "subTitle": "'Orchidée' Inkwell, circa 1905",
+        "lotNumber": "151",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 2000.0,
+          "high": 3000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471402",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0107_000(stefan_wewerka_klassenraumstuhl_vertreterstuhl_schiefer_stuhl_designed105853).jpg?mode=max",
+        "mainTitle": "STEFAN WEWERKA (1928-2013)",
+        "subTitle": "'Klassenraumstuhl / Vertreterstuhl / Schiefer Stuhl', designed 1970",
+        "lotNumber": "107",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 2000.0,
+          "high": 3000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471459",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0164_000(tiffany_studios_millefiore_paperweight_vase_circa_1907-1910120420).jpg?mode=max",
+        "mainTitle": "TIFFANY STUDIOS",
+        "subTitle": "'Millefiore' Paperweight Vase, circa 1907-1910",
+        "lotNumber": "164",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 4000.0,
+          "high": 6000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471323",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0028_000(attributed_to_jacques_adnet_pair_of_candelabra_circa_1940101937).jpg?mode=max",
+        "mainTitle": "ATTRIBUTED TO JACQUES ADNET",
+        "subTitle": "Pair of Candelabra, circa 1940",
+        "lotNumber": "28",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 2000.0,
+          "high": 3000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471342",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0047_000(afra_and_tobia_scarpa_set_of_five_polygone_vases_1974100306).jpg?mode=max",
+        "mainTitle": "AFRA (1937-2011) AND TOBIA SCARPA (B. 1935)",
+        "subTitle": "Set of Five 'Polygone' Vases, 1974",
+        "lotNumber": "47",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 5000.0,
+          "high": 7000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471396",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0101_000(finn_juhl_settee_model_nv-53_circa_1953105449).jpg?mode=max",
+        "mainTitle": "FINN JUHL (1912-1989)",
+        "subTitle": "Settee, Model NV-53, circa 1953",
+        "lotNumber": "101",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 8000.0,
+          "high": 12000.0
+        }
+      },
+      {
+        "lng": "en",
+        "id": "6471306",
+        "image": "https://www.christies.com/img/LotImages/2024/NYR/2024_NYR_22505_0011_000(tiffany_studios_lemon_leaf_table_lamp_circa_1905_d6471306055923).jpg?mode=max",
+        "mainTitle": "TIFFANY STUDIOS",
+        "subTitle": "'Lemon Leaf' Table Lamp, circa 1905",
+        "lotNumber": "11",
+        "estimateOnRequest": false,
+        "estimates": {
+          "currency": "USD",
+          "low": 8000.0,
+          "high": 12000.0
+        }
+      }
+    ]
+  }
+}
